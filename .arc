@@ -1,12 +1,11 @@
-# Warning: do not edit
-# --------------------
-# This is a generated file and will be overwritten
-
 @app
-begin-app
+light-av2
+
+@static
 
 @http
 get /
+get /burpees/today
 
 @tables
 data
