@@ -3,6 +3,10 @@
 //
 // let begin = require('@architect/functions')
 
+const moment = require('moment');
+const start = moment("20200118", "YYYYMMDD")
+const burpees = moment(start).fromNow(true).split(' ')[0]
+
 let html = `
 <!doctype html>
 <html lang=en>
@@ -14,14 +18,8 @@ let html = `
   </head>
   <body>
     <h1 class="center-text">
-      Hello world!
+      ${burpees} Burpees Today
     </h1>
-    <p class="center-text">
-      Your new route is ready to go!
-    </p>
-    <p class="center-text">
-      Learn more about building <a href="https://docs.begin.com/en/functions/http/" class="link" target="_blank">Begin HTTP functions here</a>.
-    </p>
   </body>
 </html>
 `
