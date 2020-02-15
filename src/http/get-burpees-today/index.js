@@ -4,8 +4,7 @@
 // let begin = require('@architect/functions')
 
 const moment = require('moment');
-const start = moment("20200118", "YYYYMMDD")
-const burpees = moment(start).fromNow(true).split(' ')[0]
+const burpees = moment({hours: 0}).diff('2020-01-18', 'days');
 
 let html = `
 <!doctype html>
@@ -26,7 +25,6 @@ let html = `
 
 // HTTP function
 exports.handler = async function http(req) {
-  console.log(req)
   return {
     headers: {
       'content-type': 'text/html; charset=utf8',
