@@ -3,6 +3,6 @@
   "dependencies": {
     "@architect/functions": "latest",
     "@begin/data": "latest",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   }
 }
